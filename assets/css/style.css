@@ -1,3 +1,13 @@
+/**
+* Template Name: DevFolio - v4.10.0
+* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -118,6 +128,7 @@ a:hover {
   vertical-align: middle;
 }
 
+/*--/ Sections /--*/
 .sect-4 {
   padding: 4rem 0;
 }
@@ -130,12 +141,14 @@ a:hover {
   margin-top: 4rem;
 }
 
+/*--/ Title s /--*/
 .title-s {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
 }
 
+/*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
 }
@@ -159,6 +172,7 @@ a:hover {
   margin: 0 auto;
 }
 
+/*--/ Title Left /--*/
 .title-box-2 {
   margin-bottom: 3rem;
 }
@@ -177,6 +191,7 @@ a:hover {
   bottom: -12px;
 }
 
+/*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
 }
@@ -196,6 +211,7 @@ a:hover {
   }
 }
 
+/*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
 }
@@ -222,6 +238,7 @@ a:hover {
   transition: all 500ms ease;
 }
 
+/*------/ Ul resect /------*/
 .ul-resect,
 .widget-tags ul,
 .widget-sidebar .list-sidebar,
@@ -243,6 +260,7 @@ a:hover {
   margin-right: 10px;
 }
 
+/*------/ Ico Circle /------*/
 .ico-circle {
   height: 100px;
   width: 100px;
@@ -255,6 +273,7 @@ a:hover {
   display: block;
 }
 
+/*------/ Owl Carousel /------*/
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 18px;
@@ -280,10 +299,11 @@ a:hover {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   width: 25px;
 }
 
+/*--/ Scrolltop s /--*/
 .scrolltop-mf {
   position: relative;
   display: none;
@@ -307,6 +327,10 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -337,6 +361,7 @@ a:hover {
   opacity: 1;
 }
 
+/*------/ Prelaoder /------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -382,6 +407,7 @@ a:hover {
   }
 }
 
+/*------/ Button /------*/
 .button {
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -430,6 +456,9 @@ a:hover {
   border-radius: 0.3rem;
 }
 
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -457,6 +486,12 @@ a:hover {
   padding: 12px 0;
 }
 
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
 .navbar {
   padding: 0;
 }
@@ -473,7 +508,7 @@ a:hover {
   position: relative;
 }
 
-.navbar > ul > li {
+.navbar>ul>li {
   white-space: nowrap;
   padding: 10px 0 10px 30px;
 }
@@ -501,7 +536,7 @@ a:hover {
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -515,7 +550,7 @@ a:hover {
 }
 
 .navbar a:hover:before,
-.navbar li:hover > a:before,
+.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 80%;
@@ -524,7 +559,7 @@ a:hover {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -560,11 +595,11 @@ a:hover {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #0078ff;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -576,7 +611,7 @@ a:hover {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -588,11 +623,14 @@ a:hover {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
 
+/**
+* Mobile Navigation 
+*/
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -643,12 +681,12 @@ a:hover {
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li {
+.navbar-mobile>ul>li {
   padding: 0;
 }
 
 .navbar-mobile a:hover:before,
-.navbar-mobile li:hover > a:before,
+.navbar-mobile li:hover>a:before,
 .navbar-mobile .active:before {
   visibility: hidden;
 }
@@ -662,7 +700,7 @@ a:hover {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #0078ff;
 }
 
@@ -697,14 +735,17 @@ a:hover {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #0078ff;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 .hero {
   height: 100vh;
   position: relative;
@@ -790,6 +831,9 @@ a:hover {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -826,6 +870,9 @@ a:hover {
   background-color: #0078ff;
 }
 
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
@@ -869,6 +916,9 @@ a:hover {
   color: #4e4e4e;
 }
 
+/*--------------------------------------------------------------
+# Counter
+--------------------------------------------------------------*/
 .counter-box {
   color: #fff;
   text-align: center;
@@ -896,6 +946,9 @@ a:hover {
   margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -947,6 +1000,9 @@ a:hover {
   font-size: 1.2rem;
 }
 
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
 }
@@ -960,10 +1016,7 @@ a:hover {
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -971,10 +1024,7 @@ a:hover {
   border: 1px solid #0078ff;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0078ff;
 }
 
@@ -997,7 +1047,7 @@ a:hover {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -1015,6 +1065,9 @@ a:hover {
   padding: 0;
 }
 
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
 .testimonial-box {
   color: #fff;
   text-align: center;
@@ -1083,6 +1136,9 @@ a:hover {
   background-color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
@@ -1157,7 +1213,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.php-email-form button[type="submit"] {
+.php-email-form button[type=submit] {
   background: #0078ff;
   border: 0;
   padding: 10px 24px;
@@ -1165,7 +1221,7 @@ a:hover {
   transition: 0.4s;
 }
 
-.php-email-form button[type="submit"]:hover {
+.php-email-form button[type=submit]:hover {
   background: #3393ff;
 }
 
@@ -1189,6 +1245,9 @@ a:hover {
   }
 }
 
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
 @media (min-width: 767px) {
   .card-blog {
     margin-bottom: 3rem;
@@ -1246,6 +1305,9 @@ a:hover {
   float: right;
 }
 
+/*--------------------------------------------------------------
+# Blog Single
+--------------------------------------------------------------*/
 .post-box,
 .form-comments,
 .box-comments,
@@ -1256,6 +1318,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+
   .post-box,
   .form-comments,
   .box-comments,
@@ -1302,6 +1365,7 @@ a:hover {
   font-style: italic;
 }
 
+/*------/ Comments /------*/
 .box-comments .list-comments li {
   padding-bottom: 40px;
 }
@@ -1345,6 +1409,7 @@ a:hover {
   margin-left: 40px;
 }
 
+/*------/ Sidebar /------*/
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -1395,6 +1460,9 @@ a:hover {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
   text-align: center;
   color: #fff;
@@ -1412,4 +1480,14 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+.work-box {
+  padding: 40px; /* Adjust the value as needed */
+}
+
+.skill {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
 }
