@@ -1491,3 +1491,11 @@ footer .credits a {
   font-weight: bold;
   color: #333;
 }
+
+.linkedin-color {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.github-color {
+  color: #333; /* GitHub black */
+}
