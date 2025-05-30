@@ -1700,3 +1700,104 @@ footer .credits a {
   line-height: 1.5;
   color: #555;          /* Adjust color as needed */
 }
+
+/* Competitions Section Enhancements */
+#competitions .title-a { /* If your title-a needs specific styling */
+  margin-bottom: 10px;
+}
+
+#competitions .subtitle-a {
+  color: #6c757d; /* Standard muted color */
+  font-weight: 300;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#competitions .line-mf {
+  width: 80px;
+  height: 3px;
+  background-color: var(--bs-primary); /* Use Bootstrap primary color variable or your theme color */
+  margin: 0 auto 40px auto;
+}
+
+.competition-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  /* Removed border-left for a cleaner look, can be added back if preferred */
+}
+
+.competition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important; /* !important to override .shadow-sm if needed */
+}
+
+.competition-card .card-body {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.competition-icon-header i {
+  /* Colors are set inline (text-primary, text-success etc.) for variety,
+     but you can define a default color here if you want consistency */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.competition-card .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.competition-rank {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.competition-rank i {
+  margin-right: 8px;
+  color: #ffc107; /* Gold-ish color for trophy */
+}
+.competition-rank i.bi-globe { /* Specific for global rank icon */
+    color: #0d6efd; /* Bootstrap primary */
+}
+
+.competition-rank strong {
+  color: #212529; /* Darker color for the rank number */
+}
+
+.competition-rank .text-danger strong,
+.competition-rank .text-danger i { /* For highlighted ranks */
+    color: var(--bs-danger) !important; /* Bootstrap danger color */
+}
+
+
+.competition-card .card-text.small {
+  font-size: 0.875rem; /* Slightly smaller text for descriptions */
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 15px; /* Space before button */
+  flex-grow: 1; /* Allows text to take available space before button aligns to bottom */
+}
+
+.competition-card .btn-outline-primary {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 20px; /* Pill-shaped buttons */
+}
+.competition-card .btn-outline-primary i {
+  margin-left: 5px;
+}
+
+/* Ensure cards in a row have same height (if not already handled by d-flex align-items-stretch) */
+.row.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-6.d-flex, .col-lg-4.d-flex {
+    display: flex;
+}
