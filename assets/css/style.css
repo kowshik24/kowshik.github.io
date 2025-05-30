@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -1498,4 +1500,203 @@ footer .credits a {
 
 .github-color {
   color: #333; /* GitHub black */
+}
+
+/* Work Experience Section Enhancements */
+.about-mf .subtitle-a { /* If you add a subtitle like in my HTML example */
+  color: #777;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.work-experience-entry {
+  background-color: #fff; /* Or a very light grey if your page background is white */
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #007bff; /* Accent color */
+}
+
+.work-header {
+  margin-bottom: 20px;
+}
+
+.work-header .w-title {
+  font-size: 1.8rem; /* Or your preferred size */
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.work-header .w-company {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #007bff; /* Theme color */
+  margin-bottom: 10px;
+}
+
+.w-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between date and location */
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.w-meta .w-date,
+.w-meta .w-location {
+  display: flex;
+  align-items: center;
+}
+
+.w-meta i { /* For Bootstrap Icons */
+  margin-right: 8px;
+  color: #007bff; /* Theme color */
+}
+
+.w-summary {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.w-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #eee;
+}
+
+.w-responsibilities {
+  list-style: none;
+  padding-left: 0;
+}
+
+.w-responsibilities li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #454545;
+}
+
+.w-responsibilities li::before {
+  content: "\2022"; /* Bullet character */
+  color: #007bff; /* Theme color for bullets */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em; /* Adjust for alignment */
+  position: absolute;
+  left: 10px; /* Adjust for alignment */
+}
+
+
+/* Skills Styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-tag {
+  background-color: #e9ecef; /* Light grey */
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 15px; /* More rounded for pill shape */
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #007bff; /* Theme color on hover */
+  color: #fff;
+}
+
+/* Project Cards Styling */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.project-card {
+  background-color: #f8f9fa; /* Slightly different background for cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Ensure content flows top to bottom */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0062cc; /* Darker blue for project titles */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.project-card p strong {
+  color: #333; /* Make labels like Goal, Solution slightly darker */
+}
+
+.project-card .project-link {
+  margin-top: auto; /* Pushes the link to the bottom if card heights vary */
+  display: inline-block;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.project-card .project-link i { /* For Bootstrap Icons on links */
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.project-card .project-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Line Separator (if you keep the original .line-mf) */
+.line-mf {
+  width: 100px;
+  height: 3px;
+  background-color: #007bff; /* Theme color */
+  margin: 0 auto 30px auto; /* Centered, with bottom margin */
+}
+
+.project-details-list {
+  list-style-type: disc; /* Standard bullet points */
+  padding-left: 20px;    /* Indent the list */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.project-details-list li {
+  margin-bottom: 6px;    /* Space between items */
+  font-size: 0.88rem;   /* Slightly smaller font for details */
+  line-height: 1.5;
+  color: #555;          /* Adjust color as needed */
 }
