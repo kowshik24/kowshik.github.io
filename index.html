@@ -61,7 +61,7 @@
     <div
       id="hero"
       class="hero route bg-image"
-      style="background-image: url(assets/img/bg.jpeg)"
+      style="background-image: url(assets/img/bg.JPEG)"
     >
       <div class="overlay-itro"></div>
       <div class="hero-content display-table">
@@ -361,7 +361,7 @@
     
       <div
         class="section-counter paralax-mf bg-image"
-        style="background-image: url(assets/img/counters-bg.jpg)"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
       >
         <div class="overlay-mf"></div>
         <div class="container position-relative">
@@ -1164,11 +1164,12 @@
                       </div>
                       <div>
                         <form
-                          action="forms/contact.php"
-                          method="post"
-                          role="form"
+                          action="https://formspree.io/f/mdkznpnp"
+                          method="POST"
                           class="php-email-form"
+                          target="_blank"
                         >
+                          <input type="hidden" name="_next" value="http://localhost:8000">
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <div class="form-group">
@@ -1218,11 +1219,9 @@
                               </div>
                             </div>
                             <div class="col-md-12 text-center my-3">
-                              <div class="loading">Loading</div>
-                              <div class="error-message"></div>
-                              <div class="sent-message">
-                                Your message has been sent. Thank you!
-                              </div>
+                              <div class="loading" style="display: none;">Sending message...</div>
+                              <div class="error-message" style="display: none;"></div>
+                              <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
                             </div>
                             <div class="col-md-12 text-center">
                               <button
