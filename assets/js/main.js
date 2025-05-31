@@ -187,83 +187,18 @@
 
   new PureCounter();
 
-  // Contact form handling
-  const form = document.querySelector('.php-email-form');
+  // Form handling
+  const form = document.querySelector('form');
   if (form) {
-    // Check if we're in development (localhost)
-    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
-    if (isDevelopment) {
-      // For local development, just show success message
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const loadingElement = form.querySelector('.loading');
-        const sentElement = form.querySelector('.sent-message');
-        const errorElement = form.querySelector('.error-message');
-
-        // Hide any existing messages
-        [loadingElement, errorElement, sentElement].forEach(el => el.style.display = 'none');
-        
-        // Show loading briefly
-        loadingElement.style.display = 'block';
-        
-        // Simulate submission
-        setTimeout(() => {
-          loadingElement.style.display = 'none';
-          sentElement.style.display = 'block';
-          form.reset();
-        }, 1000);
-      });
-    } else {
-      // Production handling
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const submitButton = form.querySelector('button[type="submit"]');
-        const loadingElement = form.querySelector('.loading');
-        const errorElement = form.querySelector('.error-message');
-        const sentElement = form.querySelector('.sent-message');
-        
-        // Reset all message elements
-        [loadingElement, errorElement, sentElement].forEach(el => el.style.display = 'none');
-        
-        // Show loading indicator
-        loadingElement.style.display = 'block';
-        submitButton.disabled = true;
-
-        try {
-          const formData = new FormData(form);
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          const data = await response.json();
-          
-          // Hide loading indicator
-          loadingElement.style.display = 'none';
-
-          // Always treat it as success if we get ok:true in the response
-          if (data.ok) {
-            // Success case - show success message and reset form
-            sentElement.style.display = 'block';
-            form.reset();
-          } else {
-            // Error case
-            errorElement.style.display = 'block';
-            errorElement.textContent = 'Something went wrong. Please try again.';
-          }
-        } catch (error) {
-          loadingElement.style.display = 'none';
-          errorElement.style.display = 'block';
-          errorElement.textContent = 'An error occurred. Please try again later.';
-        } finally {
-          submitButton.disabled = false;
-        }
-      });
-    }
+    form.addEventListener('submit', function(e) {
+      // Store the form data
+      const formData = new FormData(form);
+      
+      // After a small delay (to ensure form submission)
+      setTimeout(() => {
+        // Clear all form fields
+        form.reset();
+      }, 1000);
+    });
   }
 })();
